@@ -2,32 +2,30 @@
 function Home() {
     return (
         <>
-            <div style={{
-                width: "100vw",
-                display: "flex",
-                justifyContent: "center"
-            }}>
-                <div>
-                    <div style={{
-                         width: "80vw",
-                         display: "flex",
-                         flexDirection: "column",
-                         alignItems: "center"
-                    }}>
-                        <h2>Olá sejam bem vindos ao nosso blog!</h2>
-                        <p>Deixe aqui seus pensamentos !</p>
+            <div className="bg-indigo-900 flex justify-center">
+                <div className='container grid grid-cols-2 text-white'>
+                    <div className="flex flex-col gap-4 items-center justify-center py-4">
+                        <h2 className='text-5xl font-bold'>
+                            Sejam Bem Vindos(a)!
+                        </h2>
+                        <p className='text-xl'>
+                            Expresse aqui seus pensamentos e opniões
+                        </p>
+
+                        <div className="flex justify-around gap-4">
+                            <div className='rounded text-white 
+                                            border-white border-solid border-2 py-2 px-4'
+                                >
+                                Nova Postagem
+                            </div>
+                        </div>
                     </div>
 
-                    <div style={{
-                         width: "80vw",
-                         display: "flex",
-                         flexDirection: "column",
-                         alignItems: "center"
-                    }}>
-                        <img 
+                    <div className="flex justify-center ">
+                        <img
                             src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                            alt="Imagem da Página Home" 
-                            width="500px"
+                            alt="Imagem Página Home"
+                            className='w-2/3'
                         />
                     </div>
                 </div>
